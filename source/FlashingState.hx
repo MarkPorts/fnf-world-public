@@ -33,7 +33,9 @@ class FlashingState extends MusicBeatState
 		FlxG.keys.preventDefaultKeys = [TAB];
 
 		PlayerSettings.init();
-
+                #if android
+		addVirtualPad(NONE, A);
+		#end
 		super.create();
 
 		FlxG.save.bind('funkin' #if (flixel < "5.0.0"), 'ninjamuffin99' #end);
