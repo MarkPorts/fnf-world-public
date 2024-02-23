@@ -341,6 +341,7 @@ class PauseSubState extends MusicBeatSubstate
 			}
 		}
 	}
+	#end
 
 	function regenMenu():Void {
 		for (i in 0...grpMenuShit.members.length) {
