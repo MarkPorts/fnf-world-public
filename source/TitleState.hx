@@ -38,7 +38,7 @@ import flixel.util.FlxTimer;
 import lime.app.Application;
 import openfl.Assets;
 import flixel.input.mouse.FlxMouseEventManager;
-import flixel.input.mouse.FlxMouseEvent;
+
 
 using StringTools;
 typedef TitleData =
