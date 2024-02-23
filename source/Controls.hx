@@ -586,7 +586,6 @@ class Controls extends FlxActionSet
 	{
 		var copyKeys:Array<FlxKey> = keys.copy();
 		for (i in 0...copyKeys.length) {
-			if(i == NONE) copyKeys.remove(i);
 		}
 
 		#if (haxe >= "4.0.0")
