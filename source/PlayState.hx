@@ -1073,6 +1073,11 @@ class PlayState extends MusicBeatState
 				ruins.updateHitbox();
 				add(ruins);
 
+		                #if android
+		                addAndroidControls();
+		                androidControls.visible = true;
+	                 	#end
+
 				if(!ClientPrefs.lowQuality)
 				{
 					var smokeLeft:BGSprite = new BGSprite('smokeLeft', -200, -100, 0.4, 0.4, ['SmokeBlurLeft'], true);
