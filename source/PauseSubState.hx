@@ -342,6 +342,10 @@ class PauseSubState extends MusicBeatSubstate
 		}
 	}
 	#end
+	#if android
+	addVirtualPad(UP_DOWN, A_B);
+	addPadCamera();
+        #end
 
 	function regenMenu():Void {
 		for (i in 0...grpMenuShit.members.length) {
