@@ -85,5 +85,5 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
-          name: FIVE NIGHT AT FREDDY 3 Android Port
+          name: Fnf Fnaf World Android Port
           path: export/release/android/bin/app/build/outputs/apk/debug
