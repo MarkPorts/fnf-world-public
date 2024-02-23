@@ -150,6 +150,11 @@ class PauseSubState extends MusicBeatSubstate
 		var downP = controls.UI_DOWN_P;
 		var accepted = controls.ACCEPT;
 
+		#if android
+	addVirtualPad(UP_DOWN, A_B);
+	addPadCamera();
+        #end
+
 		if (upP)
 		{
 			changeSelection(-1);
@@ -341,11 +346,6 @@ class PauseSubState extends MusicBeatSubstate
 			}
 		}
 	}
-	#end
-	#if android
-	addVirtualPad(UP_DOWN, A_B);
-	addPadCamera();
-        #end
 
 	function regenMenu():Void {
 		for (i in 0...grpMenuShit.members.length) {
@@ -364,7 +364,7 @@ class PauseSubState extends MusicBeatSubstate
 			if(menuItems[i] == 'Skip Time')
 			{
 				skipTimeText = new FlxText(0, 0, 0, '', 64);
-				skipTimeText.setFormat(Paths.font("vcr.ttf"), 64, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				skipTimeText.setFormat(Paths.font("vcr.ttf"), 64, FlxColor.WHI, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 				skipTimeText.scrollFactor.set();
 				skipTimeText.borderSize = 2;
 				skipTimeTracker = item;
