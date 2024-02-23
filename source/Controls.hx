@@ -710,6 +710,7 @@ class Controls extends FlxActionSet
 	}
 
         #if !android
+	#end
 
 
 		
