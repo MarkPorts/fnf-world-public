@@ -538,6 +538,7 @@ class Character extends FlxSprite
 		}
 		settingCharacterUp = false;
 	}
+	#if !android
 
 	public function addOffset(name:String, x:Float = 0, y:Float = 0)
 	{
