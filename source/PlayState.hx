@@ -13,6 +13,9 @@ import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.FlxGame;
 import flixel.FlxObject;
+#if android
+import android.flixel.FlxVirtualPad;
+#end
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.FlxSubState;
