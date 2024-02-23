@@ -243,6 +243,9 @@ class MainMenuState extends MusicBeatState
 			}
 		}
 		#end
+		#if android
+		addVirtualPad(UP_DOWN, A_B);
+		#end
 
 		blackScreenMM = new FlxSprite().makeGraphic(Std.int(FlxG.width * 4), Std.int(FlxG.height * 4), FlxColor.BLACK);
 		blackScreenMM.scrollFactor.set();
