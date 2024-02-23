@@ -899,6 +899,10 @@ class PlayState extends MusicBeatState
 					grpLimoParticles.add(particle);
 					resetLimoKill();
 
+					#if android
+		                        addAndroidControls();
+		                        #end
+
 					//PRECACHE SOUND
 					precacheList.set('dancerdeath', 'sound');
 				}
